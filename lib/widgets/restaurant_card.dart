@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/restaurant.dart'; // adjust to your path
+import '../models/restaurant.dart';
 
 class RestaurantCard extends StatelessWidget {
   const RestaurantCard({
