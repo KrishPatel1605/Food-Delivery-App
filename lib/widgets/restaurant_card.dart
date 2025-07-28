@@ -23,9 +23,8 @@ class RestaurantCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // ---- BIG IMAGE ----
             AspectRatio(
-              aspectRatio: 16 / 9, // change to whatever height you want
+              aspectRatio: 16 / 9,
               child: restaurant.imageUrl.isNotEmpty
                   ? Image.network(
                       restaurant.imageUrl,
@@ -37,10 +36,8 @@ class RestaurantCard extends StatelessWidget {
                   : const ColoredBox(color: Colors.grey),
             ),
 
-            // ---- SEPARATOR (optional thin line like in your sketch) ----
             const Divider(height: 1, thickness: 1),
 
-            // ---- INFO SECTION ----
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
